@@ -1,6 +1,5 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAuthorization } from "firebase/auth";
+import * as firebaseAuth from "firebase"
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -15,26 +14,13 @@ const firebaseConfig = {
   };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+let app
+if(firebaseAuth.apps.length === 0){
+  app=firebaseAuth.initializeApp(firebaseConfig);
+} else{
+  app=firebaseAuth.app()
+}
 
-export const isUserLogged = () =>{
-    let isLogged = false
-    const auth = getAuth(app);
-onAuthStateChanged(auth, (user) => {
-  if (user) {
-    // User is signed in, see docs for a list of available properties
-    // https://firebase.google.com/docs/reference/js/firebase.User
-    isLogged=true
-    const uid = user.uid;
-    // ...
-  } else {
-    isLogged=true
-    // User is signed out
-    // ...
-  }
-});
-return isLogged
- }
+const auth=app.auth()
 
-
-export default authorize;
+export {auth};

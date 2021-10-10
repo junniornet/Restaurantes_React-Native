@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "255626717075",
+    "project_id": "restaurantes-reactnative",
+    "storage_bucket": "restaurantes-reactnative.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:255626717075:android:cd546d945bc1f06e5a6a66",
+        "android_client_info": {
+          "package_name": "com.junniornet.restaurants"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "255626717075-ejlgqfqpbrhf9q23nafkineqddb0m8ut.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANsO5oDp-_fdId3Qx67NH6E7safrN7gh4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "255626717075-ejlgqfqpbrhf9q23nafkineqddb0m8ut.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "255626717075-1mroai13fd6vmvdm94tqb164n2sca1mg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.junniornet.restaurants"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
